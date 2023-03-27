@@ -33,7 +33,7 @@ def get_response(prompt, model=OPENAI_API_MODEL, temperature=0, max_tokens=171, 
     openai.api_key = OPENAI_API_KEY
 
     response = openai.Completion.create(
-        engine=engine,
+        model=model,
         prompt=prompt, # This is where the user input goes
         temperature=temperature,
         max_tokens=max_tokens,
