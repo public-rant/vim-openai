@@ -26,7 +26,7 @@ OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 OPENAI_API_ENGINE = os.getenv("OPENAI_API_ENGINE")
 
 # Functions
-def get_response(prompt, engine="code-davinci-001", temperature=0, max_tokens=171, top_p=1, frequency_penalty=0.28, presence_penalty=0):
+def get_response(prompt, engine=OPENAI_API_ENGINE, temperature=0, max_tokens=171, top_p=1, frequency_penalty=0.28, presence_penalty=0):
     """
     This function calls the OpenAI API to get a response.
     """
